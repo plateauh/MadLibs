@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-b1-iUA">
-                                <rect key="frame" x="8" y="437.5" width="398" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIL-b1-iUA">
+                                <rect key="frame" x="8" y="438" width="398" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,6 +47,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="33L-3C-5FA"/>
+                    <connections>
+                        <outlet property="label" destination="rIL-b1-iUA" id="8rn-lA-0pK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,6 +101,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="fwf-yB-v5O" eventType="touchUpInside" id="gbV-3H-Sfd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hYR-BU-Ahw"/>
@@ -111,6 +117,12 @@
                             <constraint firstItem="138-8i-gAF" firstAttribute="leading" secondItem="hYR-BU-Ahw" secondAttribute="leading" constant="8" id="pKe-Ld-7z7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adjectiveTF" destination="GqK-MW-ECK" id="5Re-do-r1s"/>
+                        <outlet property="firstVerbTF" destination="gGQ-oc-0Ee" id="A7I-jG-0jt"/>
+                        <outlet property="nounTF" destination="YjR-7B-xso" id="PTj-vF-s7O"/>
+                        <outlet property="secondVerbTF" destination="6U1-9b-7ml" id="APo-s4-hxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0eq-Db-wAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
