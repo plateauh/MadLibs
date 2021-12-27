@@ -56,25 +56,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="138-8i-gAF">
-                                <rect key="frame" x="8" y="16" width="372" height="200"/>
+                                <rect key="frame" x="8" y="16" width="398" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adjective" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqK-MW-ECK">
-                                        <rect key="frame" x="0.0" y="0.0" width="372" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGQ-oc-0Ee">
-                                        <rect key="frame" x="0.0" y="52" width="372" height="44"/>
+                                        <rect key="frame" x="0.0" y="52" width="398" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-9b-7ml">
-                                        <rect key="frame" x="0.0" y="104" width="372" height="44"/>
+                                        <rect key="frame" x="0.0" y="104" width="398" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YjR-7B-xso">
-                                        <rect key="frame" x="0.0" y="156" width="372" height="44"/>
+                                        <rect key="frame" x="0.0" y="156" width="398" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -84,14 +84,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izn-L8-Vko">
-                                <rect key="frame" x="170" y="224" width="58" height="26"/>
+                                <rect key="frame" x="157" y="224" width="100" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="5c3-Pb-tbj"/>
+                                    <constraint firstAttribute="width" constant="100" id="sPI-XT-IEM"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="rrf-8k-csZ" kind="unwind" unwindAction="unwinding:" id="XQP-em-jzu"/>
@@ -101,11 +101,10 @@
                         <viewLayoutGuide key="safeArea" id="hYR-BU-Ahw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hYR-BU-Ahw" firstAttribute="trailing" secondItem="Izn-L8-Vko" secondAttribute="trailing" constant="160" id="1kU-tG-qet"/>
                             <constraint firstItem="138-8i-gAF" firstAttribute="top" secondItem="hYR-BU-Ahw" secondAttribute="top" constant="16" id="E8v-gG-U9T"/>
-                            <constraint firstItem="Izn-L8-Vko" firstAttribute="top" secondItem="138-8i-gAF" secondAttribute="bottom" constant="8" id="M0f-S6-ADI"/>
-                            <constraint firstItem="Izn-L8-Vko" firstAttribute="leading" secondItem="hYR-BU-Ahw" secondAttribute="leading" constant="170" id="OnX-tf-bmk"/>
                             <constraint firstItem="hYR-BU-Ahw" firstAttribute="trailing" secondItem="138-8i-gAF" secondAttribute="trailing" constant="8" id="RzY-ho-1CO"/>
+                            <constraint firstItem="Izn-L8-Vko" firstAttribute="top" secondItem="138-8i-gAF" secondAttribute="bottom" constant="8" symbolic="YES" id="bjL-l3-o0g"/>
+                            <constraint firstItem="Izn-L8-Vko" firstAttribute="centerX" secondItem="Tfh-wy-vLw" secondAttribute="centerX" id="hF8-Rc-QGx"/>
                             <constraint firstItem="138-8i-gAF" firstAttribute="leading" secondItem="hYR-BU-Ahw" secondAttribute="leading" constant="8" id="pKe-Ld-7z7"/>
                         </constraints>
                     </view>
