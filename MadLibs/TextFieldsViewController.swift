@@ -14,20 +14,16 @@ class TextFieldsViewController: UIViewController {
     @IBOutlet weak var secondVerbTF: UITextField!
     @IBOutlet weak var nounTF: UITextField!
     
-    @IBAction func submitButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! MainViewController
-        destination.sentence?.append(adjectiveTF.text ?? "")
-        destination.sentence?.append(firstVerbTF.text ?? "")
-        destination.sentence?.append(secondVerbTF.text ?? "")
-        destination.sentence?.append(nounTF.text ?? "")
+        destination.sentence = "We are having a perfectly \(adjectiveTF.text ?? "") time right now. Later we will \(firstVerbTF.text ?? "") and \(secondVerbTF.text ?? "") in the \(nounTF.text ?? "")."
     }
     
-
+    @IBAction func submitButtonPressed(_ sender: UIButton) {
+    }
+    
 }
