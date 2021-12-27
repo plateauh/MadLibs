@@ -22,31 +22,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3X-nb-bYa">
-                                <rect key="frame" x="120" y="811" width="175" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="Gi8-OC-KNi"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Temp Button"/>
-                                <connections>
-                                    <segue destination="fwf-yB-v5O" kind="presentation" identifier="textFieldsSegue" id="57s-re-bgF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K3X-nb-bYa" secondAttribute="bottom" constant="8" id="C7n-sp-3Ys"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K3X-nb-bYa" secondAttribute="trailing" constant="119" id="LUY-UT-d66"/>
                             <constraint firstItem="rIL-b1-iUA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RzH-18-dL9"/>
-                            <constraint firstItem="K3X-nb-bYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="UhD-E3-XZ6"/>
                             <constraint firstItem="rIL-b1-iUA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="a2s-CP-KcD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rIL-b1-iUA" secondAttribute="trailing" constant="8" id="f0p-0E-gyd"/>
                             <constraint firstItem="rIL-b1-iUA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oae-Wl-R43"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="33L-3C-5FA"/>
+                    <navigationItem key="navigationItem" id="33L-3C-5FA">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="WuN-w6-Z1w">
+                            <connections>
+                                <segue destination="fwf-yB-v5O" kind="presentation" id="N2U-Bv-gRh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="label" destination="rIL-b1-iUA" id="8rn-lA-0pK"/>
                     </connections>
@@ -102,7 +94,6 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="submitButtonPressed:" destination="fwf-yB-v5O" eventType="touchUpInside" id="mX9-MY-0SR"/>
                                     <segue destination="rrf-8k-csZ" kind="unwind" unwindAction="unwinding:" id="XQP-em-jzu"/>
                                 </connections>
                             </button>
@@ -150,6 +141,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

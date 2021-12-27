@@ -23,7 +23,4 @@ class TextFieldsViewController: UIViewController {
         destination.sentence = "We are having a perfectly \(adjectiveTF.text ?? "") time right now. Later we will \(firstVerbTF.text ?? "") and \(secondVerbTF.text ?? "") in the \(nounTF.text ?? "")."
     }
     
-    @IBAction func submitButtonPressed(_ sender: UIButton) {
-    }
-    
 }
